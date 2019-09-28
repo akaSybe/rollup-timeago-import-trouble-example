@@ -1,22 +1,20 @@
 {
-  "name": "rollup-starter-lib",
+  "name": "rollup-timeago-import-bug-example",
   "version": "1.0.0",
-  "main": "dist/how-long-till-lunch.cjs.js",
-  "module": "dist/how-long-till-lunch.esm.js",
-  "browser": "dist/how-long-till-lunch.umd.js",
+  "main": "dist/bundle.js",
   "dependencies": {
-    "ms": "^2.0.0"
+    "timeago.js": "^3.0.2"
   },
   "devDependencies": {
     "rollup": "^1.16.2",
     "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-node-resolve": "^5.1.0"
+    "rollup-plugin-node-resolve": "^5.1.0",
+    "serve": "^11.2.0"
   },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "node test/test.js",
-    "pretest": "npm run build"
+    "serve": "serve dist"
   },
   "files": [
     "dist"
